@@ -1,7 +1,23 @@
 //CUSTOM CSS
 $theme-colors: (
-    "primary": #FFEDDB,
-    "warning": #E3B7A0
+    // body
+    // "success": #e1e4e3,
+    // header
+    "warning": #ACB992,
+    // sections
+    "primary": #E9E5D6
+);
+
+$nav-link-color: (
+    #271c05
+);
+
+$nav-link-hover-color: (
+    #E9E5D6
+);
+
+$thumbnail-border-width:(
+    0
 );
 
 // IMPORTED CSS
