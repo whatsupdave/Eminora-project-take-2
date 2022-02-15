@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- CUSTOM SCSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <!-- CUSTOM CSS WITHOUT SASS -->
-    <link rel="stylesheet" href="main-withoutSass.css">
+    <link rel="stylesheet" href="main-withoutSass.css" />
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- custom js  -->
+    <script src="index.js" defer></script>
 
     <title>Eminora</title>
 
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- header section -->
     <section>
-        <div class="container">
-            <!-- logotipas -->
-            <div class="row p-1 ">
-              <div class="col">
-                <a class="navbar-brand" href="#">
-                    <img src="/public/img/login-logo.png" alt="eminora-logo" width="150" height="80">
-                  </a>
-              </div>
-              <!-- navigacijos tekstas -->
-              <div class="col align-self-center">
-                <nav class="nav justify-content-end">
-                    <a class="nav-link active" aria-current="true" href="#">Apie mus</a>
-                    <a class="nav-link" href="#">Paslaugos</a>
-                    <a class="nav-link" href="#">Klientai</a>
-                    <a class="nav-link" href="#">Kainos</a>
-                    <a class="nav-link" href="#">Kontaktai</a>
-                </nav>
-              </div>
-
-            </div>
+      <div class="container">
+        <!-- logotipas -->
+        <div class="row p-1">
+          <div class="col">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/public/img/login-logo.png"
+                alt="eminora-logo"
+                width="150"
+                height="80"
+              />
+            </a>
           </div>
+          <!-- navigacijos tekstas -->
+          <div class="col align-self-center">
+            <nav class="nav justify-content-end">
+              <a class="nav-link active" aria-current="true" href="#"
+                >Apie mus</a
+              >
+              <a class="nav-link" href="#">Paslaugos</a>
+              <a class="nav-link" href="#">Klientai</a>
+              <a class="nav-link" href="#">Kainos</a>
+              <a class="nav-link" href="#">Kontaktai</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <!-- about us section -->
     <section>
       <div class="container pt-2 pb-2">
         <div class="row">
-          <!-- tekstas -->
+          <div class="col d-flex align-items-center justify-content-center text-uppercase">
+            <div>
+              <h1>
+                Mes teikiame
+              </h1>
+                <div class="scroller">
+                  <span>
+                    <!-- <span class="text-inside-scroller">Apskaitos</span> <br>
+                    <span class="text-inside-scroller">Maisto gaminimo</span> <br>
+                    <span class="text-inside-scroller">Grozio</span> <br>
+                    <span class="text-inside-scroller">Grezimo</span> <br>
+                    <span class="text-inside-scroller">Metiniu ataskaitu</span> <br> -->
+                  </span>
+                </div>
+              <h1>
+                Paslaugas
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION WITH CAROUSEL -->
+    <!-- <section>
+      <div class="container pt-2 pb-2">
+        <div class="row">
+          
           <div class="col d-flex align-items-center justify-content-center">
             <p class="text-left text-uppercase">buhalterines paslaugos <br> viska cia darom <br> viska cia varom beleka <br> ribu jokiu is vis</p>
           </div>
-          <!-- carousel -->
+         
           <div class="col-7 p-0">
             <div id="images-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -75,12 +133,11 @@
           </div>
         </div>
       </div>
-    </section>
-    
+    </section> -->
+
     <!-- clients section  -->
     <section>
       <div class="container">
-
         <!-- text area  -->
         <div class="row">
           <div class="col d-flex justify-content-center">
@@ -90,91 +147,124 @@
 
         <!-- clients logo + text  -->
         <div class="row">
-
           <div class="col d-flex justify-content-center align-items-center">
-            <img src="/public/img/our-clients-logo/client-logo-test-1.png" class="img-thumbnail bg-transparent w-50" alt="client-logo-test-1">
+            <img
+              src="/public/img/our-clients-logo/client-logo-test-1.png"
+              class="img-thumbnail bg-transparent w-50"
+              alt="client-logo-test-1"
+            />
           </div>
 
           <div class="col d-flex justify-content-center align-items-center">
-            <img src="/public/img/our-clients-logo/client-logo-test-2.png" class="img-thumbnail bg-transparent w-50" alt="client-logo-test-2">
+            <img
+              src="/public/img/our-clients-logo/client-logo-test-2.png"
+              class="img-thumbnail bg-transparent w-50"
+              alt="client-logo-test-2"
+            />
           </div>
 
           <div class="col d-flex justify-content-center align-items-center">
-            <img src="/public/img/our-clients-logo/client-logo-test-3.png" class="img-thumbnail bg-transparent w-50" alt="client-logo-test-3">
+            <img
+              src="/public/img/our-clients-logo/client-logo-test-3.png"
+              class="img-thumbnail bg-transparent w-50"
+              alt="client-logo-test-3"
+            />
           </div>
-          
+
           <div class="col d-flex justify-content-center align-items-center">
-            <img src="/public/img/our-clients-logo/client-logo-test-4.png" class="img-thumbnail bg-transparent w-50" alt="client-logo-test-4">
+            <img
+              src="/public/img/our-clients-logo/client-logo-test-4.png"
+              class="img-thumbnail bg-transparent w-50"
+              alt="client-logo-test-4"
+            />
           </div>
 
           <div class="col d-flex justify-content-center align-items-center">
-            <img src="/public/img/our-clients-logo/client-logo-test-5.png" class="img-thumbnail bg-transparent w-50" alt="client-logo-test-5">
+            <img
+              src="/public/img/our-clients-logo/client-logo-test-5.png"
+              class="img-thumbnail bg-transparent w-50"
+              alt="client-logo-test-5"
+            />
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- prices section  -->
     <section class="pt-2">
-
       <div class="container">
-          <div class="row ">
-            <!-- first card  -->
-            <div class="col d-flex justify-content-center align-top">
-              <div class="card bg-transparent" style="width: 18rem;">
-                <img src="/public/img/prices-png/1xEuro.png" class="card-img-top" alt="1-euro-sign">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase text-center">pirminė apskaita</h5>
-                  <h6 class="card-title text-uppercase text-center">150EUR</h6>
-                  <ul class="card-text">
-                    <li>Dokumentų suvedimas</li>
-                    <li>Dar kažką</li>
-                    <li>Dar biškį kažką</li>
-                  </ul>
-                </div>
+        <div class="row">
+          <!-- first card  -->
+          <div class="col d-flex justify-content-center align-top">
+            <div class="card bg-transparent" style="width: 18rem">
+              <img
+                src="/public/img/prices-png/1xEuro.png"
+                class="card-img-top"
+                alt="1-euro-sign"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-center">
+                  pirminė apskaita
+                </h5>
+                <h6 class="card-title text-uppercase text-center">150EUR</h6>
+                <ul class="card-text">
+                  <li>Dokumentų suvedimas</li>
+                  <li>Dar kažką</li>
+                  <li>Dar biškį kažką</li>
+                </ul>
               </div>
             </div>
-            <!-- second card  -->
-            <div class="col d-flex justify-content-center align-top">
-              <div class="card bg-transparent" style="width: 18rem;">
-                <img src="/public/img/prices-png/2xEuro.png" class="card-img-top" alt="2-euro-sign">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase text-center">vidutinė apskaita</h5>
-                  <h6 class="card-title text-uppercase text-center">250EUR</h6>
-                  <ul class="card-text">
-                    <li>Konsultacija</li>
-                    <li>Dokumentų suvedimas</li>
-                    <li>Dar kažką</li>
-                    <li>Dar biškį kažką</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- third card  -->
-            <div class="col d-flex justify-content-center align-top">
-              <div class="card bg-transparent" style="width: 18rem;">
-                <img src="/public/img/prices-png/3xEuro.png" class="card-img-top" alt="3-euro-sign">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase text-center">pilna apskaita</h5>
-                  <h6 class="card-title text-uppercase text-center">500EUR</h6>
-                  <ul class="card-text">
-                    <li>Deklaracijų teikimas</li>
-                    <li>Skambinėjimas visą darbo dieną</li>
-                    <li>Konsultacija</li>
-                    <li>Dokumentų suvedimas</li>
-                    <li>Dar kažką</li>
-                    <li>Dar biškį kažką</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
           </div>
+          <!-- second card  -->
+          <div class="col d-flex justify-content-center align-top">
+            <div class="card bg-transparent" style="width: 18rem">
+              <img
+                src="/public/img/prices-png/2xEuro.png"
+                class="card-img-top"
+                alt="2-euro-sign"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-center">
+                  vidutinė apskaita
+                </h5>
+                <h6 class="card-title text-uppercase text-center">250EUR</h6>
+                <ul class="card-text">
+                  <li>Konsultacija</li>
+                  <li>Dokumentų suvedimas</li>
+                  <li>Dar kažką</li>
+                  <li>Dar biškį kažką</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="col d-flex justify-content-center align-top">
+            <div class="card bg-transparent" style="width: 18rem">
+              <img
+                src="/public/img/prices-png/3xEuro.png"
+                class="card-img-top"
+                alt="3-euro-sign"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-center">
+                  pilna apskaita
+                </h5>
+                <h6 class="card-title text-uppercase text-center">500EUR</h6>
+                <ul class="card-text">
+                  <li>Deklaracijų teikimas</li>
+                  <li>Skambinėjimas visą darbo dieną</li>
+                  <li>Konsultacija</li>
+                  <li>Dokumentų suvedimas</li>
+                  <li>Dar kažką</li>
+                  <li>Dar biškį kažką</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </section>
 
     <!-- contacts section  -->
-</body>
+  </body>
 </html>
