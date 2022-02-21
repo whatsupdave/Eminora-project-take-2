@@ -7,20 +7,20 @@ function rand(min, max) {
 
 // Selecting elements
 let scrollerSpan = document.querySelector('.scroller > span')
-// Creating elements
-let textInsideScroller = document.createElement('span') 
 
 // Function generating service name in random order for scroller
 const dynamicServiceNames = () => {
-    const serviceNames = ['grožio', 'gaminimo', 'apskaitos', 'prižiūrėjimo', 'metinės ataskaitos', 'deklaracijų teikimo', 'barščių virimo'];
+    const serviceNames = ['example1', 'example2', 'example3', 'example4', 'example5', 'example6', 'example7'];
     const randomName = serviceNames[rand(0, serviceNames.length)];
-    textInsideScroller.append(randomName)
-    scrollerSpan.append(textInsideScroller)
+    scrollerSpan.innerHTML= `<span>${randomName}</span>`;   
 };
 
-for (let i = 0; i < 6; i++){
-    setTimeout(dynamicServiceNames, 2000);
-    break;
-};
 
+// Executing my function
+let i = 1;
+setInterval(function()
+{
+        console.log('in function')
+    dynamicServiceNames(i++);
+}, 1000)
 

@@ -3,14 +3,18 @@ body {
     background: -webkit-linear-gradient(to left, #fe8c00, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #fe8c00, #FF4E50);
 }
-  
+
+.text-inside-scroller{
+  color: pink;
+}
+
 /* Scroller styling */
 .scroller {
-    height: 1.2em;
+    height: 2em;
     line-height: 1.2em;
     position: relative;
-    overflow: hidden;
-    width: 10em;
+    /* overflow: hidden; */
+    width: 12em;
 }
 
 .scroller > span {
@@ -20,7 +24,7 @@ body {
     font-weight: bold;
 }
 
-@keyframes slide {
+/* @keyframes slide {
     0% {
       top: 0;
     }
@@ -33,4 +37,4 @@ body {
     75% {
       top: -3.6em;
     }
-}
+} */
